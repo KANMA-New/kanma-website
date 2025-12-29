@@ -44,14 +44,41 @@ export default function BranchManager() {
             </label>
             <div className="flex gap-3">
               <div className="bg-sidebar-accent/50 flex items-center justify-center rounded-xl px-3 py-3.5 gap-2">
-                <span className="text-xl">🇮🇳</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 480"
+                  className="w-6 h-4 rounded-sm object-cover"
+                >
+                  <path fill="#f93" d="M0 0h640v160H0z" />
+                  <path fill="#fff" d="M0 160h640v160H0z" />
+                  <path fill="#138808" d="M0 320h640v160H0z" />
+                  <g transform="matrix(3.2 0 0 3.2 320 240)">
+                    <circle r="20" fill="#008" />
+                    <circle r="17.5" fill="#fff" />
+                    <circle r="3.5" fill="#008" />
+                    <g id="d">
+                      <g id="c">
+                        <g id="b">
+                          <g id="a" fill="#008">
+                            <circle r=".9" transform="rotate(7.5 -8.75 133.5)" />
+                            <path d="M0 17.5L.6 7 0 2l-.6 5L0 17.5z" />
+                          </g>
+                          <use href="#a" transform="rotate(15)" />
+                        </g>
+                        <use href="#b" transform="rotate(30)" />
+                      </g>
+                      <use href="#c" transform="rotate(60)" />
+                    </g>
+                    <use href="#d" transform="rotate(120)" />
+                    <use href="#d" transform="rotate(240)" />
+                  </g>
+                </svg>
                 <span className="font-semibold text-gray-700">IN</span>
               </div>
               <input
                 type="text"
                 defaultValue="8885332934"
                 className="bg-sidebar-accent/50 hover:bg-sidebar-accent focus:bg-sidebar-accent flex-1 rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
-                readOnly
               />
             </div>
           </div>
