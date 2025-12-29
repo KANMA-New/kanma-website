@@ -23,7 +23,7 @@ const Header = () => {
             <Link href={"/managers"} className="text-xl font-sf-pro font-regular">
               Manager’s
             </Link>
-            <Link href={"/"} className="text-xl font-sf-pro font-regular">
+            <Link href={"/partner"} className="text-xl font-sf-pro font-regular">
               Shops
             </Link>
             <Link href={"/"} className="text-xl font-sf-pro font-regular">
