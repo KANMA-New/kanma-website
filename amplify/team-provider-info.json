@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kanmawebsite-dev-753d6-authRole",
+      "UnauthRoleArn": "arn:aws:iam::207813899247:role/amplify-kanmawebsite-dev-753d6-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::207813899247:role/amplify-kanmawebsite-dev-753d6-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-kanmawebsite-dev-753d6-deployment",
+      "UnauthRoleName": "amplify-kanmawebsite-dev-753d6-unauthRole",
+      "StackName": "amplify-kanmawebsite-dev-753d6",
+      "StackId": "arn:aws:cloudformation:us-east-1:207813899247:stack/amplify-kanmawebsite-dev-753d6/190c5340-e583-11f0-ba58-1266c923410d",
+      "AmplifyAppId": "d1e197do2ugptx"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1e197do2ugptx",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
