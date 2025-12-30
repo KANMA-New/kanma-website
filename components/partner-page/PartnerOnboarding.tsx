@@ -32,7 +32,7 @@ export default function PartnerOnboarding() {
             </label>
             <input
               type="text"
-              defaultValue="Nandha Kishore"
+              placeholder="Enter Owner Name"
               className="bg-sidebar-accent/50 hover:bg-sidebar-accent focus:bg-sidebar-accent w-full rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
             />
           </div>
@@ -40,7 +40,7 @@ export default function PartnerOnboarding() {
           {/* Phone Field */}
           <div className="flex flex-col gap-2">
             <label className="font-montserrat text-sm font-medium text-gray-600">
-              Entre your phone number
+              Enter your phone number
             </label>
             <div className="flex gap-3">
               <div className="bg-sidebar-accent/50 flex items-center justify-center rounded-xl px-3 py-3.5 gap-2">
@@ -77,7 +77,7 @@ export default function PartnerOnboarding() {
               </div>
               <input
                 type="text"
-                defaultValue="8885332934"
+                placeholder="00000 00000"
                 className="bg-sidebar-accent/50 hover:bg-sidebar-accent focus:bg-sidebar-accent flex-1 rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
               />
             </div>
@@ -90,7 +90,7 @@ export default function PartnerOnboarding() {
             </label>
             <input
               type="text"
-              placeholder="Entre Your Shop Name"
+              placeholder="Enter Your Shop Name"
               className="bg-sidebar-accent/50 placeholder:text-gray-400 hover:bg-sidebar-accent focus:bg-sidebar-accent w-full rounded-xl px-4 py-3.5 text-base font-medium text-gray-900 outline-none transition-colors"
             />
           </div>
@@ -124,7 +124,6 @@ export default function PartnerOnboarding() {
             <div className="relative flex h-4 w-4 items-center justify-center">
               <input 
                 type="checkbox" 
-                defaultChecked
                 className="peer h-4 w-4 cursor-pointer appearance-none rounded-sm border border-kanma-red bg-kanma-red accent-kanma-red transition-all checked:bg-kanma-red hover:bg-kanma-red/90"
               />
               <svg
