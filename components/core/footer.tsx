@@ -30,26 +30,26 @@ const Footer = () => {
           </div>
 
           {/* Right Links Cols */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <h4 className="font-bold text-[#830000] text-lg">Products</h4>
-              <div className="flex flex-col gap-3 text-sm font-semibold text-[#2B0000CC]">
+              <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
                 <Link href="/" className="hover:text-[#830000]">KANMA</Link>
                 <Link href="/" className="hover:text-[#830000]">Shop's KANMA</Link>
                 <Link href="/" className="hover:text-[#830000]">Delivery Partner</Link>
                 <Link href="/managers" className="hover:text-[#830000]">Branch Manager</Link>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <h4 className="font-bold text-[#830000] text-lg">Support</h4>
-              <div className="flex flex-col gap-3 text-sm font-semibold text-[#2B0000CC]">
+              <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
                 <Link href="/privacy-policy" className="hover:text-[#830000]">Privacy Policy</Link>
                 <Link href="#" className="hover:text-[#830000]">Refund Policy</Link>
                 <Link href="/terms-and-conditions" className="hover:text-[#830000]">Terms and Conditions</Link>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <h4 className="font-bold text-[#830000] text-lg">Contact</h4>
-              <div className="flex flex-col gap-3 text-sm font-semibold text-[#2B0000CC]">
+              <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
                 <a href="mailto:Support@kanma.in" className="hover:text-[#830000]">Support@kanma.in</a>
                 <a href="tel:+918333916492" className="hover:text-[#830000]">+91 8333916492</a>
               </div>

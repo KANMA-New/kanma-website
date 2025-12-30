@@ -26,14 +26,19 @@ const Header = () => {
             <Link href={"/partner"} className="text-xl font-sf-pro font-regular">
               Shops
             </Link>
-            <Link href={"/"} className="text-xl font-sf-pro font-regular">
+            <Link href={"/faq"} className="text-xl font-sf-pro font-regular">
               FAQs
             </Link>
           </div>
           <div className="flex-1 w-full flex-end">
-            <button className="bg-kanma-red text-white px-6 py-2.5 rounded-lg">
+            <Link 
+              href={"https://play.google.com/store/apps/details?id=com.app.kanma&hl=en"} 
+              className="bg-kanma-red text-white px-6 py-2.5 rounded-lg opacity-50 pointer-events-none cursor-not-allowed"
+              aria-disabled="true"
+              tabIndex={-1}
+            >
               Install App
-            </button>
+            </Link>
           </div>
         </div>
       </main>

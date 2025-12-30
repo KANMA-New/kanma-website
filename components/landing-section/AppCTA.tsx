@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Smartphone } from "lucide-react";
 
 const AppCTA = () => {
   return (
-    <section className="w-full max-w-6xl px-4 mt-6 mb-16">
+    <section className="w-full max-w-[1200px] px-4 mb-16">
       <div className="bg-[#830000] rounded-[3rem] px-8 md:px-16 pt-10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden group min-h-[300px]">
         {/* Left Content */}
         <div className="z-10 flex-1 py-4">
@@ -15,22 +16,38 @@ const AppCTA = () => {
           </p>
           
           <div className="flex flex-wrap gap-3 mb-8">
-            {/* Google Play Placeholder */}
-            <div className="bg-white rounded-xl px-4 py-2 flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform">
-               <div className="w-6 h-6 bg-gray-200 rounded-full" />
-               <div className="flex flex-col">
-                  <span className="text-[8px] text-gray-500 font-bold uppercase leading-none">Get it on</span>
-                  <span className="text-sm text-black font-bold leading-none">Google Play</span>
-               </div>
-            </div>
-            {/* App Store Placeholder */}
-            <div className="bg-white rounded-xl px-4 py-2 flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform">
-               <div className="w-6 h-6 bg-gray-200 rounded-full" />
-               <div className="flex flex-col">
-                  <span className="text-[8px] text-gray-500 font-bold uppercase leading-none">Download on the</span>
-                  <span className="text-sm text-black font-bold leading-none">App Store</span>
-               </div>
-            </div>
+            {/* Google Play Button */}
+            {/* Google Play Button */}
+            <Link 
+              href="https://play.google.com/store/apps/details?id=com.app.kanma&hl=en"
+              className="cursor-not-allowed opacity-50 pointer-events-none hover:scale-105 transition-transform"
+              aria-disabled="true"
+              tabIndex={-1}
+            >
+               <Image 
+                 src="/Images/playstore.png" 
+                 alt="Get it on Google Play"
+                 width={180}
+                 height={53}
+                 className="h-[50px] w-auto"
+               />
+            </Link>
+            
+            {/* App Store Button */}
+            <Link 
+              href="#"
+              className="cursor-not-allowed opacity-50 pointer-events-none hover:scale-105 transition-transform"
+              aria-disabled="true"
+              tabIndex={-1}
+            >
+               <Image 
+                 src="/Images/app-store.png" 
+                 alt="Download on the App Store"
+                 width={180}
+                 height={53}
+                 className="h-[50px] w-auto"
+               />
+            </Link>
           </div>
 
           <span className="text-white/30 text-[9px] font-bold uppercase tracking-[0.2em]">
