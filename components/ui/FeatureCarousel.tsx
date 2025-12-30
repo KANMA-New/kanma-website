@@ -17,14 +17,14 @@ const slides = [
     title: "Membership Benefits",
     description:
       "Enjoy free deliveries, exclusive deals, priority support, and access to daily subscriptions like milk, tiffin, and essentials – all designed to make everyday life easier.",
-    image: "/images/Group 34621.png",
+    image: "/images/phone-5.png",
   },
   {
     id: 3,
     title: "Nearest Shops",
     description:
       "Shop from trusted stores near you. KANMA connects you with nearby shops to ensure faster delivery, fresher products, and reliable local service.",
-    image: "/images/Group 34621.png",
+    image: "/images/phone-6.png",
   },
 ];
 
