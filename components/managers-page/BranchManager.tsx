@@ -32,7 +32,7 @@ export default function BranchManager() {
             </label>
             <input
               type="text"
-              defaultValue="Nandha Kishore"
+              placeholder="Entre your Name"
               className="bg-sidebar-accent/50 hover:bg-sidebar-accent focus:bg-sidebar-accent w-full rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
             />
           </div>
@@ -77,8 +77,8 @@ export default function BranchManager() {
               </div>
               <input
                 type="text"
-                defaultValue="8885332934"
-                className="bg-sidebar-accent/50 hover:bg-sidebar-accent focus:bg-sidebar-accent flex-1 rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
+                placeholder="Entre Your Phone Number"
+                className="bg-sidebar-accent/50 placeholder:text-gray-400 hover:bg-sidebar-accent focus:bg-sidebar-accent flex-1 rounded-xl px-4 py-3.5 text-base font-semibold text-gray-900 outline-none transition-colors"
               />
             </div>
           </div>
