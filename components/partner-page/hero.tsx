@@ -94,7 +94,7 @@ export default function PartnerHero() {
           </div>
 
           {/* Right Content */}
-          <div className="w-1/2 flex justify-end">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
             <div className="transition-transform hover:translate-y-[-10px] duration-500">
               <Image
                 src={slides[currentSlide].image}

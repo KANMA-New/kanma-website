@@ -5,17 +5,17 @@ const ComingSoon = () => {
   return (
     <div className="relative w-full pb-32 pt-0 min-h-[800px] flex flex-col items-center">
       {/* Background Text */}
-      <div className="absolute top-0 w-full flex flex-col items-center justify-start pointer-events-none select-none leading-[0.85] z-0 pt-10">
-        <span className="text-[28vw] md:text-[22vw] font-montserrat font-bold text-[#EAD6D6] tracking-tighter opacity-80">
+      <div className="absolute top-0 w-full flex flex-col items-center justify-start pointer-events-none select-none leading-[0.85] z-0 pt-0">
+        <span className="text-[15vw] md:text-[22vw] font-montserrat font-bold text-[#EAD6D6] tracking-tighter opacity-80">
           COMING
         </span>
-        <span className="text-[28vw] md:text-[22vw] font-montserrat font-bold text-[#EAD6D6] tracking-tighter opacity-80">
+        <span className="text-[15vw] md:text-[22vw] font-montserrat font-bold text-[#EAD6D6] tracking-tighter opacity-80">
           SOON
         </span>
       </div>
 
       {/* Cards Grid */}
-      <div className="relative z-10 w-full max-w-6xl px-4 flex flex-col md:flex-row gap-6 items-center justify-center mt-[35vw] md:mt-[25vw]">
+      <div className="relative z-10 w-full max-w-6xl px-4 flex flex-col md:flex-row gap-6 items-center justify-center mt-[28vw] md:mt-[25vw]">
         {/* Salon Service Card (Vertical) */}
         <div className="bg-white rounded-[2.5rem] p-8 w-full md:w-[340px] h-[580px] shadow-sm border border-[#F0F0F0] flex flex-col items-center shrink-0 hover:shadow-xl transition-shadow duration-500">
           <h4 className="font-bold text-2xl text-black mb-2 text-center">Salon Service</h4>

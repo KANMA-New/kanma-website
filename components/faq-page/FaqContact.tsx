@@ -5,25 +5,25 @@ import React from "react";
 export default function FaqContact() {
   return (
     <div className="flex w-full items-center justify-center bg-transparent pb-5 px-4 md:px-8">
-      <div className="relative flex w-full max-w-[1150px] items-center">
+      <div className="relative flex flex-col md:block w-full max-w-[1150px] items-center">
         {/* Left Red Section */}
-        <div className="bg-kanma-red relative flex min-h-[420px] w-full flex-col justify-between rounded-[48px] px-10 py-14 text-white shadow-lg md:px-16 md:py-16">
+        <div className="bg-kanma-red relative flex min-h-[300px] md:min-h-[420px] w-full flex-col justify-between rounded-[32px] md:rounded-[48px] px-6 py-10 md:px-16 md:py-16 text-white shadow-lg">
           <div className="flex flex-col gap-6">
-            <h1 className="font-sf-pro text-4xl font-bold tracking-wide md:text-5xl">
+            <h1 className="font-sf-pro text-3xl md:text-5xl font-bold tracking-wide">
               Still have questions?
             </h1>
-            <p className="font-montserrat max-w-[550px] text-lg font-medium leading-relaxed opacity-95 md:text-xl">
+            <p className="font-montserrat max-w-[550px] text-base md:text-xl font-medium leading-relaxed opacity-95">
               Can't find the answer you're looking for? Our customer support team is here to help.
             </p>
           </div>
           
-          <div className="font-montserrat text-lg font-medium opacity-90">
+          <div className="font-montserrat text-base md:text-lg font-medium opacity-90 mt-8 md:mt-0">
             T&C Apply
           </div>
         </div>
 
         {/* Right Form Section - Floating Card */}
-        <div className="absolute right-0 lg:right-16 top-1/2 z-10 box-border flex w-full max-w-[420px] -translate-y-1/2 flex-col gap-6 rounded-[32px] border border-gray-100 bg-white p-8 shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
+        <div className="relative md:absolute right-0 lg:right-16 top-auto md:top-1/2 z-10 box-border flex w-full max-w-[420px] mt-8 md:mt-0 md:-translate-y-1/2 flex-col gap-6 rounded-[32px] border border-gray-100 bg-white p-6 md:p-8 shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
           
           {/* Email Field */}
           <div className="flex flex-col gap-2">

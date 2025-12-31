@@ -47,13 +47,13 @@ export default function FeatureCarousel() {
             <h2 className="text-3xl md:text-5xl font-[family-name:var(--font-calistoga)] mb-6 leading-tight">
               {slides[currentSlide].title}
             </h2>
-            <p className="text-white/80 text-[26px] leading-[38px] font-normal font-[family-name:var(--font-montserrat)] mb-12 min-h-[80px]">
+            <p className="text-white/80 text-base md:text-[26px] leading-[38px] font-normal font-[family-name:var(--font-montserrat)] mb-12 min-h-[80px]">
               {slides[currentSlide].description}
             </p>
           </div>
 
           <div className="flex items-center justify-between mt-auto w-full pt-6">
-            <div className="flex gap-2">
+            <div className="flex gap-2 mb-10">
               {slides.map((_, index) => (
                 <button
                   key={index}

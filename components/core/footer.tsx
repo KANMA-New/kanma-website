@@ -30,6 +30,8 @@ const Footer = () => {
           </div>
 
           {/* Right Links Cols */}
+          {/* Right Links Cols - Wrapper for better mobile layout */}
+          <div className="grid grid-cols-2 gap-8 md:flex md:flex-row md:gap-12 lg:gap-24 w-full md:w-auto">
             <div className="flex flex-col gap-5">
               <h4 className="font-bold text-[#830000] text-lg">Products</h4>
               <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
@@ -47,13 +49,14 @@ const Footer = () => {
                 <Link href="/terms-and-conditions" className="hover:text-[#830000]">Terms and Conditions</Link>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 col-span-2 md:col-span-1"> {/* Full width on mobile grid if needed, or just let it flow */}
               <h4 className="font-bold text-[#830000] text-lg">Contact</h4>
               <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
                 <a href="mailto:Support@kanma.in" className="hover:text-[#830000]">Support@kanma.in</a>
                 <a href="tel:+918333916492" className="hover:text-[#830000]">+91 8333916492</a>
               </div>
             </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}

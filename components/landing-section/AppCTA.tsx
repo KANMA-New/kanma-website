@@ -5,7 +5,7 @@ import { Smartphone } from "lucide-react";
 const AppCTA = () => {
   return (
     <section className="w-full max-w-[1200px] px-4 mb-16">
-      <div className="bg-[#830000] rounded-[3rem] px-8 md:px-16 pt-10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden group min-h-[300px]">
+      <div className="bg-[#830000] rounded-[3rem] px-6 md:px-16 pt-10 flex flex-col md:flex-row items-center justify-between relative overflow-hidden group min-h-[300px]">
         {/* Left Content */}
         <div className="z-10 flex-1 py-4">
           <h2 className="text-white text-2xl md:text-4xl font-bold mb-3 font-montserrat tracking-tight">
@@ -29,7 +29,7 @@ const AppCTA = () => {
                  alt="Get it on Google Play"
                  width={180}
                  height={53}
-                 className="h-[50px] w-auto"
+                 className="h-[40px] md:h-[50px] w-auto"
                />
             </Link>
             
@@ -45,7 +45,7 @@ const AppCTA = () => {
                  alt="Download on the App Store"
                  width={180}
                  height={53}
-                 className="h-[50px] w-auto"
+                 className="h-[40px] md:h-[50px] w-auto"
                />
             </Link>
           </div>
