@@ -1,8 +1,9 @@
 import Image from "next/image";
+
 import React from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import Logo from "../../public/images/logo.png";
+import Logo from "../../public/Images/logo.png";
 import Link from "next/link";
 
 const Header = () => {
