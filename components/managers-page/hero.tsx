@@ -9,27 +9,27 @@ export default function Hero() {
 
   const managers = [
     {
-      src: "/images/bRANCH Manager photo.png", 
+      src: "/Images/bRANCH Manager photo.png", 
       alt: "Branch Manager 1"
     },
     {
-      src: "/images/bRANCH Manager photo (1).png", 
+      src: "/Images/bRANCH Manager photo (1).png", 
       alt: "Branch Manager 2"
     },
     {
-      src: "/images/bRANCH Manager photo (2).png",  
+      src: "/Images/bRANCH Manager photo (2).png",  
       alt: "Branch Manager 3"
     },
     {
-      src: "/images/bRANCH Manager photo (3).png", 
+      src: "/Images/bRANCH Manager photo (3).png", 
       alt: "Branch Manager 4"
     },
     {
-      src: "/images/bRANCH Manager photo (4).png", 
+      src: "/Images/bRANCH Manager photo (4).png", 
       alt: "Branch Manager 5"
     },
     {
-      src: "/images/bRANCH Manager photo (5).png",  
+      src: "/Images/bRANCH Manager photo (5).png",  
       alt: "Branch Manager 6"
     }
   ];

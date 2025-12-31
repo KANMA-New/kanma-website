@@ -10,28 +10,28 @@ const slides = [
     title: "On-Spot Payments",
     description:
       "Receive payments instantly for every order delivered - Fast Payouts like never Before.",
-    image: "/images/phone-4.png",
+    image: "/Images/phone-4.png",
   },
   {
     id: 2,
     title: "Expand Your Reach",
     description:
       "Connect with thousands of local customers and grow your business footprint effortlessly.",
-    image: "/images/phone-7.png",
+    image: "/Images/phone-7.png",
   },
   {
     id: 3,
     title: "Simple Management",
     description:
       "Track orders and earnings in real-time with our intuitive partner dashboard. Manage everything in one place.",
-    image: "/images/phone-8.png",
+    image: "/Images/phone-8.png",
   },
   {
     id: 3,
     title: "Dedicated Shop App",
     description:
       "Manage orders with our easy-to-use mobile app - A dedicated Dashboard with Total earnings and manage your orders form any where.",
-    image: "/images/phone-9.png",
+    image: "/Images/phone-9.png",
   },
 ];
 
