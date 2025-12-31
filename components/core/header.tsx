@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React from "react";
-import Logo from "../../public/images/logo.png";
+import Logo from "../../public/Images/logo.png";
 import Link from "next/link";
 
 const Header = () => {
   return (
     <section className="w-full absolute top-5 z-30">
-      <main className="max-w-[1200px] mx-auto">
+      <main className="max-w-300 mx-auto">
         <div className="py-2 px-2 w-full flex-between gap-5 border-2 border-black/5 rounded-2xl">
           <div className="flex-1 w-full flex">
             <Link href={'/'}>

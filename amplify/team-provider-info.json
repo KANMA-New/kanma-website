@@ -19,5 +19,26 @@
         }
       }
     }
+  },
+  "web": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kanmawebsite-web-42836-authRole",
+      "UnauthRoleArn": "arn:aws:iam::207813899247:role/amplify-kanmawebsite-web-42836-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::207813899247:role/amplify-kanmawebsite-web-42836-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-kanmawebsite-web-42836-deployment",
+      "UnauthRoleName": "amplify-kanmawebsite-web-42836-unauthRole",
+      "StackName": "amplify-kanmawebsite-web-42836",
+      "StackId": "arn:aws:cloudformation:us-east-1:207813899247:stack/amplify-kanmawebsite-web-42836/eeb39da0-e592-11f0-a4ed-0affd66229a3",
+      "AmplifyAppId": "d2ux8c99io91m2"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2ux8c99io91m2",
+          "type": "manual"
+        }
+      }
+    }
   }
 }
