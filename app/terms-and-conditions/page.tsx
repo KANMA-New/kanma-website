@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function TermsAndConditionsPage() {
   return (
@@ -151,12 +152,15 @@ export default function TermsAndConditionsPage() {
           <section>
             <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">10. Account Suspension & Termination</h2>
             <p className="mb-2">KANMA reserves the right to suspend or terminate accounts for:</p>
-            <ul className="list-disc pl-5 text-gray-600 space-y-1">
+            <ul className="list-disc pl-5 text-gray-600 space-y-1 mb-4">
               <li>Violation of these Terms</li>
               <li>Fraudulent or abusive behavior</li>
               <li>Misuse of referrals, memberships, or offers</li>
               <li>Harassment of delivery partners, shopkeepers, or support staff</li>
             </ul>
+            <p className="text-gray-600 font-medium">
+              If you wish to delete your account, please <Link href="/contact-us" className="text-kanma-red hover:underline">Request here</Link>.
+            </p>
           </section>
 
           {/* Section 11 */}
