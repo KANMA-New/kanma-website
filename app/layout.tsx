@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   title: "Kanma",
   description: "Kanma",
   icons: {
-    icon: "/images/logo.png",
+    icon: "/icons/favicon.png",
   }
 };
 

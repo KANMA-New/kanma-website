@@ -18,7 +18,7 @@ const ComingSoon = () => {
       <div className="relative z-10 w-full max-w-6xl px-4 flex flex-col md:flex-row gap-6 items-center justify-center mt-[28vw] md:mt-[25vw]">
         {/* Salon Service Card (Vertical) */}
         <div className="bg-white rounded-[2.5rem] p-8 w-full md:w-[340px] h-[580px] shadow-sm border border-[#F0F0F0] flex flex-col items-center shrink-0 hover:shadow-xl transition-shadow duration-500">
-          <h4 className="font-bold text-2xl text-black mb-2 text-center">Salon Service</h4>
+          <h4 className="font-bold text-2xl text-black mb-2 text-center">Saloon Service</h4>
           <p className="text-gray-500 text-[13px] text-center mb-8 px-4 leading-relaxed font-medium">
             Book trusted local barbers at your preferred time, with easy scheduling through the app.
           </p>
