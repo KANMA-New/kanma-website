@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MapPin } from 'lucide-react';
 
 export default function Hero() {
   const [showAll, setShowAll] = useState(false);
@@ -37,6 +38,27 @@ export default function Hero() {
   const initialManagers = managers.slice(0, 3);
   const extraManagers = managers.slice(3);
 
+  const ManagerCard = ({ manager, index, offset = 0 }: { manager: any, index: number, offset?: number }) => (
+    <div key={index + offset} className="group relative w-full aspect-4/5 overflow-hidden rounded-[2.5rem] hover:shadow-xl transition-all duration-300 border-4 border-transparent hover:border-white">
+      <Image
+        src={manager.src}
+        alt={manager.alt}
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#7F0808] via-[#7F0808]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <div className="flex items-center gap-2 mb-1">
+            <MapPin className="text-white w-6 h-6 shrink-0 fill-white" />
+            <h3 className="text-white font-bold text-2xl font-sf-pro">Sujathanagar</h3>
+          </div>
+          <p className="text-white/90 text-sm font-medium font-montserrat pl-8">Branch Manager - VSKP</p>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section className="relative w-full min-h-screen bg-[#FFFEF9] py-20 px-4 md:px-8 overflow-hidden font-sans">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-50/80 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
@@ -55,15 +77,7 @@ export default function Hero() {
           {/* First Batch - Always Visible */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
             {initialManagers.map((manager, index) => (
-              <div key={index} className="relative w-full aspect-4/5 overflow-hidden rounded-[2.5rem] hover:shadow-md transition-shadow duration-300">
-                <Image
-                  src={manager.src}
-                  alt={manager.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
+              <ManagerCard key={index} manager={manager} index={index} />
             ))}
           </div>
 
@@ -79,15 +93,7 @@ export default function Hero() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6">
                   {extraManagers.map((manager, index) => (
-                    <div key={index + 3} className="relative w-full aspect-4/5 overflow-hidden rounded-[2.5rem] hover:shadow-md transition-shadow duration-300">
-                      <Image
-                        src={manager.src}
-                        alt={manager.alt}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                      />
-                    </div>
+                    <ManagerCard key={index} manager={manager} index={index} offset={3} />
                   ))}
                 </div>
               </motion.div>
