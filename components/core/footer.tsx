@@ -45,7 +45,7 @@ const Footer = () => {
               <h4 className="font-bold text-[#830000] text-lg">Support</h4>
               <div className="flex flex-col gap-5 text-sm font-semibold text-[#2B0000CC]">
                 <Link href="/privacy-policy" className="hover:text-[#830000]">Privacy Policy</Link>
-                <Link href="#" className="hover:text-[#830000]">Refund Policy</Link>
+                <Link href="/refund-policy" className="hover:text-[#830000]">Refund Policy</Link>
                 <Link href="/terms-and-conditions" className="hover:text-[#830000]">Terms and Conditions</Link>
               </div>
             </div>
