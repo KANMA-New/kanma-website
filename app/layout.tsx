@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Calistoga, Montserrat } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/core/header";
-import Footer from "@/components/core/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,9 +65,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${calistoga.variable} ${montserrat.variable} ${sfPro.variable} antialiased`}
       >
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
