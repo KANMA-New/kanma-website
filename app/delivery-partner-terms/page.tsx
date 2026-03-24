@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 
 export default function DeliveryPartnerTerms() {
   return (
-    <main className="min-h-screen bg-[var(--kanma-cream)] text-[#4A1D1D] font-[family-name:var(--font-montserrat)] p-8 md:p-12 lg:p-20">
+    <main className="min-h-screen bg-kanma-cream text-[#4A1D1D] p-8 md:p-12 lg:p-20">
       <div className="max-w-4xl mx-auto space-y-16">
         
         {/* Header Section */}
         <section className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-calistoga)]">
+          <h1 className="text-4xl md:text-5xl font-bold">
             Delivery Partner Terms & Policies
           </h1>
           <p className="text-lg opacity-80">
@@ -22,7 +22,7 @@ export default function DeliveryPartnerTerms() {
 
         {/* Terms & Conditions */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold font-[family-name:var(--font-calistoga)] border-b border-[#4A1D1D]/20 pb-4">
+          <h2 className="text-3xl font-bold border-b border-[#4A1D1D]/20 pb-4">
             Delivery Boy – Terms & Conditions
           </h2>
           <p className="font-medium">By joining KANMA as a Delivery Partner, you agree to follow the terms mentioned below.</p>

@@ -7,20 +7,21 @@ export default function TermsAndConditionsPage() {
       <div className="flex w-full max-w-4xl flex-col gap-10 px-6 md:px-12">
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="font-sf-pro text-4xl font-bold tracking-tight text-kanma-red md:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-kanma-red md:text-5xl">
             Terms & Conditions
           </h1>
-          <p className="font-montserrat mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600">
             Last Updated: December 2025
           </p>
         </div>
 
         {/* Content Section */}
-        <div className="font-montserrat flex flex-col gap-8 text-base leading-relaxed text-gray-800 md:text-lg">
+        <div className="flex flex-col gap-8 text-base leading-relaxed text-gray-800 md:text-lg">
+
           
           {/* Section 1 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">1. Acceptance of Terms</h2>
             <p>
               By downloading, installing, accessing, or using the KANMA mobile application or its
               services, you agree to comply with and be bound by these Terms & Conditions. If you do not
@@ -30,7 +31,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 2 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-4">2. Service Description</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Service Description</h2>
             <p className="mb-4">KANMA is a hyperlocal quick-commerce and service platform that enables users to:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>Order groceries, food, and essential products from nearby shops</li>
@@ -46,7 +47,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 3 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">3. Account Registration</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">3. Account Registration</h2>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>Users must create an account using a valid mobile number.</li>
               <li>You are responsible for providing accurate and updated information.</li>
@@ -57,7 +58,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 4 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">4. Acceptable Use</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">4. Acceptable Use</h2>
             <p className="mb-2">The following are strictly prohibited on KANMA:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>Alcohol, illegal goods, restricted substances, or offensive items</li>
@@ -71,7 +72,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 5 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-4">5. Memberships, Subscriptions & Charges</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Memberships, Subscriptions & Charges</h2>
             <p className="mb-4">
               KANMA offers both free usage and paid membership plans (such as Crown, Throne, and Empire).
             </p>
@@ -87,7 +88,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 6 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-4">6. Orders, Scheduling & Subscriptions</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Orders, Scheduling & Subscriptions</h2>
             
             <h3 className="font-bold text-gray-900 mb-2">Orders</h3>
             <ul className="list-disc pl-5 text-gray-600 space-y-1 mb-6">
@@ -114,7 +115,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 7 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">7. Own Order (O2) Feature</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">7. Own Order (O2) Feature</h2>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>O2 allows users to request custom items or services not listed in the app.</li>
               <li>All O2 requests are subject to approval and availability.</li>
@@ -125,7 +126,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 8 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">8. Delivery & Fulfillment</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">8. Delivery & Fulfillment</h2>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>Orders are delivered by delivery partners assigned within the branch radius.</li>
               <li>Delivery timelines are estimates and may vary due to traffic, weather, or operational issues.</li>
@@ -135,7 +136,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 9 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-4">9. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Limitation of Liability</h2>
             <p className="mb-2">KANMA is not liable for:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1 mb-4">
               <li>Quality, pricing, or conduct of third-party shops or service providers</li>
@@ -150,7 +151,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 10 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">10. Account Suspension & Termination</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">10. Account Suspension & Termination</h2>
             <p className="mb-2">KANMA reserves the right to suspend or terminate accounts for:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1 mb-4">
               <li>Violation of these Terms</li>
@@ -165,7 +166,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 11 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">11. Modifications to Services or Terms</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">11. Modifications to Services or Terms</h2>
             <p className="mb-2">KANMA may update or modify these Terms & Conditions at any time to reflect:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1 mb-4">
               <li>New features</li>
@@ -179,7 +180,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 12 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">12. Governing Law & Jurisdiction</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">12. Governing Law & Jurisdiction</h2>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>These Terms & Conditions are governed by the laws of India.</li>
               <li>Any disputes shall be subject to the exclusive jurisdiction of Hyderabad, Telangana.</li>
@@ -188,7 +189,7 @@ export default function TermsAndConditionsPage() {
 
           {/* Section 13 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">13. Contact Information</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">13. Contact Information</h2>
             <p>
               For any questions or concerns regarding these Terms & Conditions, contact: <br/>
               <a href="mailto:support@kanma.in" className="text-blue-600 hover:underline font-bold">support@kanma.in</a>

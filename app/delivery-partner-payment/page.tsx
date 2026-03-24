@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 
 export default function DeliveryPartnerPayment() {
   return (
-    <main className="min-h-screen bg-[var(--kanma-cream)] text-[#4A1D1D] font-[family-name:var(--font-montserrat)] p-8 md:p-12 lg:p-20">
+    <main className="min-h-screen bg-kanma-cream text-[#4A1D1D] p-8 md:p-12 lg:p-20">
       <div className="max-w-4xl mx-auto space-y-16">
         
         {/* Header Section */}
         <section className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-calistoga)]">
+          <h1 className="text-4xl md:text-5xl font-bold">
             Delivery Boy – Payment & Commission Policy
           </h1>
           <p className="text-lg opacity-80">
