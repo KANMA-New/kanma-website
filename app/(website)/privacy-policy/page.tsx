@@ -6,20 +6,21 @@ export default function PrivacyPolicyPage() {
       <div className="flex w-full max-w-4xl flex-col gap-10 px-6 md:px-12">
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="font-sf-pro text-4xl font-bold tracking-tight text-kanma-red md:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-kanma-red md:text-5xl">
             Privacy Policy
           </h1>
-          <p className="font-montserrat mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600">
             Last Updated: December 2025
           </p>
         </div>
 
         {/* Content Section */}
-        <div className="font-montserrat flex flex-col gap-8 text-base leading-relaxed text-gray-800 md:text-lg">
+        <div className="flex flex-col gap-8 text-base leading-relaxed text-gray-800 md:text-lg">
+
           
           {/* Section 1 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">1. Introduction</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">1. Introduction</h2>
             <p>
               KANMA (“we”, “our”, or “us”) respects your privacy and is committed to protecting your
               personal information. This Privacy Policy explains how we collect, use, store, and protect
@@ -32,7 +33,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 2 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-4">2. Information We Collect</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Information We Collect</h2>
             <p className="mb-4">We collect only the information necessary to provide our services effectively:</p>
 
             <div className="flex flex-col gap-4 pl-4">
@@ -95,7 +96,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 3 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">3. How We Use Your Data</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">3. How We Use Your Data</h2>
             <p className="mb-2">We use collected data to:</p>
             <ul className="list-disc pl-5 text-gray-600 space-y-1">
               <li>Process and deliver orders</li>
@@ -111,7 +112,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 4 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">4. Data Sharing</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">4. Data Sharing</h2>
             <p>We do not sell or misuse your personal data. Data may be shared only when required with:</p>
             <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
               <li>Shops and service providers (to fulfill your orders)</li>
@@ -123,7 +124,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 5 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">5. Data Retention</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">5. Data Retention</h2>
             <p>We retain user data only for as long as:</p>
             <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
               <li>Your account is active, or</li>
@@ -135,7 +136,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 6 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">6. User Rights</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">6. User Rights</h2>
             <p>You have the right to:</p>
             <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
               <li>Access your personal data</li>
@@ -151,7 +152,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 7 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">7. Children’s Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">7. Children’s Privacy</h2>
             <p>
               KANMA does not knowingly collect personal information from children under the age of 13. If
               we become aware that such data has been collected, we will take steps to delete it
@@ -161,7 +162,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 8 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">8. Data Security</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">8. Data Security</h2>
             <p>We use appropriate technical and organizational measures to protect your data, including:</p>
             <ul className="list-disc pl-5 mt-2 text-gray-600 space-y-1">
               <li>Secure servers</li>
@@ -176,7 +177,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 9 */}
           <section>
-            <h2 className="font-sf-pro text-2xl font-bold text-gray-900 mb-2">9. Policy Updates</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">9. Policy Updates</h2>
             <p>
               We may update this Privacy Policy from time to time to reflect new features, legal
               requirements, or platform policies. Any updates will be published within the app and on our
