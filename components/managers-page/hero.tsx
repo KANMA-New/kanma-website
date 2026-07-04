@@ -5,44 +5,32 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
-export default function Hero() {
+export interface BranchManagerData {
+  _id: string;
+  name: string;
+  locality: string;
+  city: string;
+  state: string;
+  profile_image: string;
+}
+
+interface HeroProps {
+  managers?: BranchManagerData[];
+}
+
+export default function Hero({ managers = [] }: HeroProps) {
   const [showAll, setShowAll] = useState(false);
 
-  const managers = [
-    {
-      src: "/Images/bRANCH Manager photo.png", 
-      alt: "Branch Manager 1"
-    },
-    {
-      src: "/Images/bRANCH Manager photo (1).png", 
-      alt: "Branch Manager 2"
-    },
-    {
-      src: "/Images/bRANCH Manager photo (2).png",  
-      alt: "Branch Manager 3"
-    },
-    {
-      src: "/Images/bRANCH Manager photo (3).png", 
-      alt: "Branch Manager 4"
-    },
-    {
-      src: "/Images/bRANCH Manager photo (4).png", 
-      alt: "Branch Manager 5"
-    },
-    {
-      src: "/Images/bRANCH Manager photo (5).png",  
-      alt: "Branch Manager 6"
-    }
-  ];
+  const displayManagers = managers;
 
-  const initialManagers = managers.slice(0, 3);
-  const extraManagers = managers.slice(3);
+  const initialManagers = displayManagers.slice(0, 3);
+  const extraManagers = displayManagers.slice(3);
 
-  const ManagerCard = ({ manager, index, offset = 0 }: { manager: any, index: number, offset?: number }) => (
-    <div key={index + offset} className="group relative w-full aspect-4/5 overflow-hidden rounded-[2.5rem] hover:shadow-xl transition-all duration-300 border-4 border-transparent hover:border-white">
+  const ManagerCard = ({ manager, index, offset = 0 }: { manager: BranchManagerData, index: number, offset?: number }) => (
+    <div key={manager._id || index + offset} className="group relative w-full aspect-4/5 overflow-hidden rounded-[2.5rem] hover:shadow-xl transition-all duration-300 border-4 border-transparent hover:border-white">
       <Image
-        src={manager.src}
-        alt={manager.alt}
+        src={manager.profile_image}
+        alt={manager.name || "Branch Manager"}
         fill
         className="object-cover transition-transform duration-500 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 33vw"
@@ -51,9 +39,9 @@ export default function Hero() {
         <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
           <div className="flex items-center gap-2 mb-1">
             <MapPin className="text-white w-6 h-6 shrink-0 fill-white" />
-            <h3 className="text-white font-bold text-2xl font-sf-pro">Sujathanagar</h3>
+            <h3 className="text-white font-bold text-2xl font-sf-pro">{manager.locality || "Locality"}</h3>
           </div>
-          <p className="text-white/90 text-sm font-medium font-montserrat pl-8">Branch Manager - VSKP</p>
+          <p className="text-white/90 text-sm font-medium font-montserrat pl-8">Branch Manager - {manager.city || "City"}</p>
         </div>
       </div>
     </div>
@@ -73,40 +61,46 @@ export default function Hero() {
           Meet our dedicated branch managers who ensure seamless hyperlocal delivery and services in your area
         </p>
 
-        <div className="w-full mb-16 px-4 md:px-0">
-          {/* First Batch - Always Visible */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-            {initialManagers.map((manager, index) => (
-              <ManagerCard key={index} manager={manager} index={index} />
-            ))}
+        {displayManagers.length > 0 ? (
+          <div className="w-full mb-16 px-4 md:px-0">
+            {/* First Batch - Always Visible */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+              {initialManagers.map((manager, index) => (
+                <ManagerCard key={manager._id} manager={manager} index={index} />
+              ))}
+            </div>
+
+            {/* Second Batch - Animated */}
+            <AnimatePresence>
+              {showAll && extraManagers.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6">
+                    {extraManagers.map((manager, index) => (
+                      <ManagerCard key={manager._id} manager={manager} index={index} offset={3} />
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
+        ) : (
+          <div className="text-center text-gray-500 mb-16">No branch managers found.</div>
+        )}
 
-          {/* Second Batch - Animated */}
-          <AnimatePresence>
-            {showAll && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="overflow-hidden"
-              >
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6">
-                  {extraManagers.map((manager, index) => (
-                    <ManagerCard key={index} manager={manager} index={index} offset={3} />
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-
-        <button 
-          onClick={() => setShowAll(!showAll)}
-          className="bg-[#7F0808] text-white text-lg font-medium py-3 px-10 rounded-xl hover:bg-[#600606] transition-colors duration-300 shadow-sm"
-        >
-          {showAll ? "See Less" : "See All"}
-        </button>
+        {extraManagers.length > 0 && (
+          <button 
+            onClick={() => setShowAll(!showAll)}
+            className="bg-[#7F0808] text-white text-lg font-medium py-3 px-10 rounded-xl hover:bg-[#600606] transition-colors duration-300 shadow-sm"
+          >
+            {showAll ? "See Less" : "See All"}
+          </button>
+        )}
       </div>
     </section>
   );
